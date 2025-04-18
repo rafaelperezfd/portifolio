@@ -1,0 +1,43 @@
+.about {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #333333, #262626);
+  color: #f4f4f9;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about p:hover {
+  transform: scale(1.05);
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

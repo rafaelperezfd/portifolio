@@ -1,0 +1,49 @@
+.projects {
+    padding: 80px 20px;
+    background-color: #1c1c1c;
+    color: #f4f4f9;
+    text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #333333;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: #444;
+}
+
+.project-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+  
+.video-container {
+    margin-top: 20px;
+    max-width: 800px; /* Definir a largura máxima */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    border-radius: 8px; /* Bordas arredondadas no vídeo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil no vídeo */
+}
