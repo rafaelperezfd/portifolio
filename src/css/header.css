@@ -3,18 +3,23 @@
   width: 100%;
   top: 0;
   padding: 20px 40px;
-  background-color: transparent;
+  background-color: transparent; /* transparente ao carregar */
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0); /* começa visível */
 }
 
-.header.scrolled {
-  background-color: #1c1c1c;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+.header.visible {
+  background-color: transparent; /* aparece com fundo ao rolar */
+  transform: translateY(0);
+}
+
+.header.hidden {
+  transform: translateY(-100%); /* esconde ao rolar pra baixo */
 }
 
 .logo img {

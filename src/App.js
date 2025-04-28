@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import About from "./components/About";
@@ -17,9 +17,33 @@ function App() {
     });
   }, []);
 
+  const [scrollDir, setScrollDir] = useState("none");
+  const [atTop, setAtTop] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+  
+      // Só define visibilidade se já passou um pouquinho
+      setAtTop(currentScrollY < 10);
+  
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setScrollDir("down");
+      } else if (currentScrollY < lastScrollY) {
+        setScrollDir("up");
+      }
+  
+      setLastScrollY(currentScrollY);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
     <div className="App">
-      <Header  />
+      <Header scrollDir={scrollDir} atTop={atTop}/>
       <Hero />
       <About />
       <Projects />

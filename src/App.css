@@ -10,6 +10,15 @@ body {
   background-color: #1c1c1c;
   color: #f4f4f9;
 }
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f4f4f9;
+}
 
 h1, h2, h3 {
   font-weight: bold;
@@ -40,4 +49,74 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Estilos da navegação */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* Estilos do botão de alternância */
+.dark-mode-toggle {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #f4f4f9;
+  color: #333;
+  border-color: #333;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #262626;
+  color: #f4f4f9;
+  border-color: #f4f4f9;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #f4f4f9;
+  color: #262626;
+  border-color: #262626;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width: 100%;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

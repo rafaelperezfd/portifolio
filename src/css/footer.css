@@ -60,3 +60,23 @@
     }
   }
   
+  .socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .socials a {
+    color: #f4f4f9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #1da1f2; /* Cor ao passar o mouse (pode trocar por outra) */
+  }
+  

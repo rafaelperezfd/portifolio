@@ -22,7 +22,7 @@ function Projects() {
           <p>Desenvolvido com Html, Css e JavaScript puro, afim de lista e adicionar tarefas diárias</p>
           <div className="video-container">
           <video width="100%" autoPlay muted loop>
-            <source src="/Lista de Tarefas - Google Chrome 2025-03-30 22-04-59.mp4" type="video/mp4" />
+            <source src="video\Ecommerce Reserva - Google Chrome 2025-03-26 01-02-16.mp4" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
           </div>
@@ -33,7 +33,7 @@ function Projects() {
           <p>Desenvolvido com Django para treinar as habilidades Back-end em python.</p>
           <div className="video-container">
           <video width="100%" autoPlay muted loop>
-            <source src="/Ecommerce Reserva - Google Chrome 2025-03-26 01-02-16.mp4" type="video/mp4" />
+            <source src="video/Ecommerce Reserva - Google Chrome 2025-03-26 01-02-16.mp4" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
           </div>
@@ -44,7 +44,7 @@ function Projects() {
           <p>Desenvolvido com Django para treinar as habilidades Back-end em python.</p>
           <div className="video-container">
           <video width="100%" autoPlay muted loop>
-            <source src="/Ecommerce Reserva - Google Chrome 2025-03-26 01-02-16.mp4" type="video/mp4" />
+            <source src="video/Ecommerce Reserva - Google Chrome 2025-03-26 01-02-16.mp4" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
           </div>
